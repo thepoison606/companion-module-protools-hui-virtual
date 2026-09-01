@@ -1,0 +1,40 @@
+{
+  "$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
+  "type": "connection",
+  "id": "protools-hui-virtual",
+  "name": "Pro Tools HUI Virtual MIDI",
+  "shortname": "PT HUI Virtual",
+  "description": "Prototype virtual HUI MIDI endpoint for Pro Tools using Windows MIDI Services",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": "https://github.com/thepoison606/companion-module-protools-hui-virtual",
+  "bugs": "https://github.com/thepoison606/companion-module-protools-hui-virtual/issues",
+  "maintainers": [
+    {
+      "name": "thepoison606",
+      "github": "thepoison606"
+    }
+  ],
+  "runtime": {
+    "type": "node22",
+    "api": "nodejs-ipc",
+    "apiVersion": "0.0.0",
+    "entrypoint": "../src/main.js",
+    "permissions": {
+      "child-process": true
+    }
+  },
+  "legacyIds": [],
+  "manufacturer": "Community prototype",
+  "products": [
+    "Pro Tools HUI Virtual MIDI"
+  ],
+  "keywords": [
+    "Avid",
+    "Pro Tools",
+    "HUI",
+    "MIDI",
+    "Windows MIDI Services"
+  ],
+  "isPrerelease": true
+}
