@@ -1,0 +1,33 @@
+{
+  "name": "companion-module-protools-hui-virtual",
+  "version": "0.1.0",
+  "description": "Prototype Bitfocus Companion module exposing a Windows MIDI Services virtual HUI endpoint for Pro Tools mute control",
+  "main": "src/main.js",
+  "type": "commonjs",
+  "scripts": {
+    "format": "prettier -w .",
+    "package": "companion-module-build --prerelease",
+    "check": "node --check src/main.js && node --check src/helper-process.js && node --check src/actions.js && node --check src/feedbacks.js && node --check src/variables.js"
+  },
+  "dependencies": {
+    "@companion-module/base": "~2.0.4"
+  },
+  "devDependencies": {
+    "@companion-module/tools": "^3.1.0",
+    "prettier": "^3.8.3"
+  },
+  "engines": {
+    "node": "^22.20",
+    "yarn": "^4"
+  },
+  "license": "MIT",
+  "prettier": "@companion-module/tools/.prettierrc.json",
+  "packageManager": "yarn@4.17.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thepoison606/companion-module-protools-hui-virtual.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thepoison606/companion-module-protools-hui-virtual/issues"
+  }
+}
